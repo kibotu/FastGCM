@@ -147,7 +147,7 @@ public class GCMManager implements IGCMManager{
 
             if(hasToken && mGcmListener != null){
                 String token = mSharedPreferences.getString(Constants.SHARED_KEY_TOKEN,"");
-                mGcmListener.onDeviceRegisted(token);
+                mGcmListener.onDeviceRegistered(token);
             }
         }
     };
